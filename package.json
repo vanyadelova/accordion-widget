@@ -1,0 +1,25 @@
+{
+  "name": "accordion-widget",
+  "description": "The Accordion widget with several panels that can be collapsed or expanded by a user.",
+  "dependencies": {
+    "react-dom": "16",
+    "react": "16",
+    "quill": "1.3.7",
+    "prop-types": "latest",
+    "jszip": "3.1.3",
+    "devextreme-react": "20.1",
+    "devextreme": "20.1",
+    "devexpress-gantt": "1.0.7",
+    "devexpress-diagram": "1.0.9"
+  },
+  "version": "0.0.0",
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
