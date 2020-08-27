@@ -16,12 +16,12 @@ This is my own attempt at the Progress' task. The goal of this task is to create
 
 Clone the repository.
 ```
-$ git clone git@github.com:vanyadelova/dashboard.git
+$ git clone git@github.com:vanyadelova/accordion-widget.git
 ```
 Install and start the app.
 
 ```
-cd dashboard
+cd accordion-widget
 npm install || yarn
 npm start || yarn start 
 ```
