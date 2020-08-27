@@ -2,7 +2,7 @@
 ## [DEMO]()
 
 ## What this project is about
-This is my own attempt at the Progress' task. The goal of this task is to create an Accordion widget initialized from KendoUI datasource. The app should include the following features:
+This is my own attempt at the Progress' task. The goal of this task is to create an Accordion widget. The app should include the following features:
 
 - **Can be initialized either from markup, data object or KendoUI datasource**
 - **Supports templates when bound to datasourcet**
