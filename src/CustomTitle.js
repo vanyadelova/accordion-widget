@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react";
 
 export default function CustomTitle(data) {
-  return (
-    <h1>{data.CompanyName}</h1>
-  );
+  return <h1>{data.CompanyName}</h1>;
 }

@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 
 export default function CustomItem(data) {
   return (
     <div>
       <div>
         <p>
-          <b>{data.City} </b>
-          (<span>{data.State}</span>)
+          <b>{data.City} </b>(<span>{data.State}</span>)
         </p>
         <p>
           <span>{data.Zipcode} </span>
@@ -21,7 +20,8 @@ export default function CustomItem(data) {
           Fax: <b>{data.Fax}</b>
         </p>
         <p>
-          Website: <a href={data.Website} target="_blank">
+          Website:{" "}
+          <a href={data.Website} target="_blank">
             {data.Website}
           </a>
         </p>

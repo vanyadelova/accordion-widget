@@ -1,12 +1,12 @@
-import React from 'react';
-import Accordion from 'devextreme-react/accordion';
-import CheckBox from 'devextreme-react/check-box';
-import TagBox from 'devextreme-react/tag-box';
-import Slider, { Tooltip, Label } from 'devextreme-react/slider';
+import React from "react";
+import Accordion from "devextreme-react/accordion";
+import CheckBox from "devextreme-react/check-box";
+import TagBox from "devextreme-react/tag-box";
+import Slider, { Tooltip, Label } from "devextreme-react/slider";
 
-import service from './data.js';
-import CustomTitle from './CustomTitle.js';
-import CustomItem from './CustomItem.js';
+import service from "./data.js";
+import CustomTitle from "./CustomTitle.js";
+import CustomItem from "./CustomItem.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class App extends React.Component {
       selectedItems: [this.companies[0]],
       multiple: false,
       collapsible: false,
-      animationDuration: 300
+      animationDuration: 300,
     };
     this.selectionChanged = this.selectionChanged.bind(this);
     this.selectedItemsChanged = this.selectedItemsChanged.bind(this);
@@ -26,7 +26,12 @@ class App extends React.Component {
   }
 
   render() {
-    const { selectedItems, multiple, collapsible, animationDuration } = this.state;
+    const {
+      selectedItems,
+      multiple,
+      collapsible,
+      animationDuration,
+    } = this.state;
     return (
       <div id="accordion">
         <Accordion
@@ -41,7 +46,8 @@ class App extends React.Component {
         />
         <div className="selected-data">
           <span className="caption">Selected Items</span>
-          <TagBox dataSource={this.companies}
+          <TagBox
+            dataSource={this.companies}
             displayExpr="CompanyName"
             value={selectedItems}
             onValueChanged={this.selectedItemsChanged}
@@ -51,7 +57,8 @@ class App extends React.Component {
         <div className="options">
           <div className="caption">Options</div>
           <div className="option">
-            <CheckBox text="Multiple enabled"
+            <CheckBox
+              text="Multiple enabled"
               value={multiple}
               onValueChanged={this.multipleChanged}
             />
@@ -82,7 +89,7 @@ class App extends React.Component {
 
   selectionChanged(e) {
     let newItems = [...this.state.selectedItems];
-    e.removedItems.forEach(item => {
+    e.removedItems.forEach((item) => {
       let index = newItems.indexOf(item);
       if (index >= 0) {
         newItems.splice(index, 1);
@@ -92,31 +99,31 @@ class App extends React.Component {
       newItems = [...newItems, ...e.addedItems];
     }
     this.setState({
-      selectedItems: newItems
+      selectedItems: newItems,
     });
   }
 
   selectedItemsChanged(e) {
     this.setState({
-      selectedItems: e.value
+      selectedItems: e.value,
     });
   }
 
   multipleChanged(e) {
     this.setState({
-      multiple: e.value
+      multiple: e.value,
     });
   }
 
   collapsibleChanged(e) {
     this.setState({
-      collapsible: e.value
+      collapsible: e.value,
     });
   }
 
   animationDurationChanged(e) {
     this.setState({
-      animationDuration: e.value
+      animationDuration: e.value,
     });
   }
 }
