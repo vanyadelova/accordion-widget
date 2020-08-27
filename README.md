@@ -1,5 +1,5 @@
 # 💨 Accordion widget 💨 
-## [DEMO]()
+## [DEMO](http://ec2-3-129-209-179.us-east-2.compute.amazonaws.com:90/)
 
 ## What this project is about
 This is my own attempt at the Progress' task. The goal of this task is to create an Accordion widget. The app should include the following features:
