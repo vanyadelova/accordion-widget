@@ -2,19 +2,14 @@
 ## [DEMO]()
 
 ## What this project is about
-This is my own attempt at the NGT's Frontend Developer Test. The goal of this test is to create a small dashboard with a page that displays a summary of multiple
-results. The app consumes the data from the Firebase database and display it in a mini front-end dashboard. The app should include the following features:
+This is my own attempt at the Progress' task. The goal of this task is to create an Accordion widget initialized from KendoUI datasource. The app should include the following features:
 
-- **Converted results to a json structure**
-- **JavaScript, ReactJS and UIkit**
-- **Firebase Realtime Database**
-- **Nice commit messages**
+- **Can be initialized either from markup, data object or KendoUI datasource**
+- **Supports templates when bound to datasourcet**
+- **Can expand / collapse items**
+- **Support animations when expanding / collapsing**
 - **Working code**
 - **Readme**
-
-
-
-It is a ReactJS Web-App using Firebase as a backend database..
 
 
 ## Run it locally 🖥
